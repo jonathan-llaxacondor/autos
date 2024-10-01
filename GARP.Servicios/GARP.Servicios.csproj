@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\GARP.Application.DTO\GARP.Application.DTO.csproj" />
+    <ProjectReference Include="..\GARP.Application.Interface\GARP.Application.Interface.csproj" />
+    <ProjectReference Include="..\GARP.Application.UseCases\GARP.Application.UseCases.csproj" />
+    <ProjectReference Include="..\GARP.Application.Validators\GARP.Application.Validators.csproj" />
+    <ProjectReference Include="..\GARP.Persistence\GARP.Persistence.csproj" />
+    <ProjectReference Include="..\GARP.Transversal.Common\GARP.Transversal.Common.csproj" />
+  </ItemGroup>
+
+</Project>
